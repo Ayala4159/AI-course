@@ -1,0 +1,225 @@
+/* App.css - עם אנימציות */
+:root {
+  --bg-primary: #2c0f0a; /* בורדו-חום כהה */
+  --text-light: #fff;
+  --text-dark: #2c0f0a;
+  --accent-gold: #ffcc33; /* זהב */
+  --accent-orange: #d44d1e; /* כתום שקיעה */
+}
+
+/* רקע כללי עם תמונה ואפקט פרלקס עדין */
+.main-layout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed; /* Fixed for parallax effect */
+  background-size: cover;
+  font-family: 'Assistant', 'Segoe UI', sans-serif;
+  direction: rtl;
+  overflow: hidden;
+  position: relative;
+  /* אפקט עדין של שכבת כההות מעל הרקע */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* שכבת כההות עדינה */
+    backdrop-filter: blur(2px); /* טשטוש קל לרקע */
+  }
+}
+
+/* קארד הצ'אט עם אפקט זכוכית */
+.chat-card {
+  width: 90%;
+  max-width: 600px;
+  height: 80vh;
+  background: rgba(44, 15, 10, 0.85); /* בורדו עמוק שקוף יותר */
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 191, 0, 0.2);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+  animation: fadeInScale 0.8s ease-out forwards; /* אנימציית כניסה לכרטיס */
+  position: relative; /* לוודא שהכרטיס מעל שכבת הרקע */
+  z-index: 10;
+}
+
+/* אנימציית כניסה לקארד */
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.chat-header {
+  padding: 20px 25px;
+  background: linear-gradient(90deg, rgba(255, 100, 0, 0.1), rgba(255, 200, 0, 0.15));
+  border-bottom: 1px solid rgba(255, 191, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--accent-gold);
+  animation: slideInFromTop 0.6s ease-out forwards; /* אנימציית כניסה להאדר */
+  animation-delay: 0.2s; /* עיכוב קטן אחרי כניסת הקארד */
+  opacity: 0;
+}
+
+/* אנימציית כניסה להאדר */
+@keyframes slideInFromTop {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header-info { display: flex; align-items: center; gap: 15px; }
+.avatar { 
+  font-size: 2rem; 
+  background: var(--bg-primary); 
+  padding: 5px; 
+  border-radius: 50%; 
+  box-shadow: 0 0 15px rgba(255, 204, 51, 0.3); /* הילה עדינה */
+}
+.header-info h3 { margin: 0; font-size: 1.2rem; color: var(--text-light); }
+.header-info small { color: rgba(255, 255, 255, 0.7); }
+.heart-icon { color: #e63946; animation: beat 2s infinite ease-in-out; }
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* אנימציית כניסה להודעות בועה */
+.msg-row { 
+  display: flex; 
+  width: 100%; 
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInFromBottom 0.4s ease-out forwards;
+}
+
+@keyframes slideInFromBottom {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* עיכובים לכניסת הודעות ברצף */
+.msg-row:nth-child(1) { animation-delay: 0.3s; }
+.msg-row:nth-child(2) { animation-delay: 0.4s; }
+.msg-row:nth-child(3) { animation-delay: 0.5s; }
+.msg-row:nth-child(4) { animation-delay: 0.6s; }
+/* אפשר להוסיף עוד nth-child לפי הצורך */
+
+
+.msg-row.user { justify-content: flex-end; }
+.msg-row.bot { justify-content: flex-start; }
+
+.msg-bubble {
+  padding: 12px 20px;
+  border-radius: 20px;
+  max-width: 80%;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-out; /* אנימציית ריחוף בעכבר */
+}
+
+.msg-bubble:hover {
+  transform: translateY(-3px);
+}
+
+.user .msg-bubble {
+  background: linear-gradient(135deg, var(--accent-orange), #ff8c00);
+  color: var(--text-light);
+  border-bottom-left-radius: 2px;
+}
+
+.bot .msg-bubble {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  border-bottom-right-radius: 2px;
+}
+
+.input-footer {
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255, 191, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  animation: slideInFromBottom 0.6s ease-out forwards; /* אנימציית כניסה לפוטר */
+  animation-delay: 0.4s; /* עיכוב */
+  opacity: 0;
+}
+
+input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 191, 0, 0.3);
+  padding: 15px;
+  border-radius: 15px;
+  color: var(--text-light);
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 10px rgba(255, 204, 51, 0.4);
+}
+
+input::placeholder { color: rgba(255, 255, 255, 0.6); }
+
+.send-btn {
+  background: var(--accent-gold);
+  color: var(--text-dark);
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  animation: bounceIn 0.5s ease-out forwards; /* אנימציית כניסה לכפתור */
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.send-btn:hover { 
+  background: #ffd65c; 
+  transform: scale(1.08); 
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.6); /* הילה זוהרת בריחוף */
+}
+
+/* אנימציית קפיצה לכפתור */
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.loading { 
+  color: var(--accent-gold); 
+  font-size: 0.9rem; 
+  margin-right: 10px; 
+  animation: pulseOpacity 1.5s infinite ease-in-out; /* אנימציית ריחוף ושינוי שקיפות */
+}
+
+@keyframes pulseOpacity {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
