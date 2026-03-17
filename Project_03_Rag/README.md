@@ -1,9 +1,3 @@
-<style>
-  body {
-    direction: rtl;
-  }
-</style>
-
 # Agent Analysis System 🤖
 
 קובץ זה מתעד את מערכת ניתוח ה-Agent שחה עבור פרויקט ניהול המשימות. המערכת משלבת יכולות RAG (Retrieval-Augmented Generation) כדי לספק תשובות מדויקות על בסיס תיעוד טכני, לוגים ונתונים מובנים.
