@@ -1,0 +1,455 @@
+<!-- <!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly | המרחב הנעים שלך</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            /* פלטת צבעים חלבית ורכה */
+            --bg-cream: #fdfbfb;
+            --glass-white: rgba(255, 255, 255, 0.6); /* שקיפות מוגברת לרקע */
+            --primary-pastel: #b8c1ec; /* כחול-סגול רך */
+            --accent-feather: #eeb5eb; /* ורוד נוצתי עדין */
+            --text-dark: #353b48;
+            --text-muted: #7f8c8d;
+            
+            /* צבעי עדיפות "גיר" */
+            --prio-low: #e2f0cb;
+            --prio-med: #b5ead7;
+            --prio-high: #ffdac1;
+            --prio-crit: #ff9aa2;
+        }
+
+        body {
+            /* תמונת רקע נוצתית, פסטלית ומרפרפת */
+background-image: url('https://images.unsplash.com/photo-1516641396056-0ce60a85d49f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            font-family: 'Plus Jakarta Sans', 'Assistant', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* מונע גלילה של כל הדף */
+        }
+
+        .dashboard {
+            width: 95%;
+            max-width: 1200px;
+            height: 85vh;
+            background: var(--glass-white);
+            backdrop-filter: blur(25px); /* טשטוש חזק לאפקט יוקרתי */
+            -webkit-backdrop-filter: blur(25px);
+            border-radius: 40px;
+            display: flex;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Sidebar - Form Area */
+        .sidebar {
+            width: 320px;
+            padding: 50px 40px;
+            border-left: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: -1px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo i { color: var(--accent-feather); }
+
+        .form-title { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 18px;
+            border: 1px solid rgba(0,0,0,0.03);
+            background: rgba(255,255,255,0.8);
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            transition: 0.3s;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input:focus, select:focus { border-color: var(--primary-pastel); box-shadow: 0 0 0 4px rgba(184, 193, 236, 0.1); }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-pastel) 0%, var(--accent-feather) 100%);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 18px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 10px;
+            box-shadow: 0 8px 25px rgba(238, 181, 235, 0.3);
+        }
+
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(238, 181, 235, 0.4); }
+
+        /* Main Feed - List Area */
+        .feed {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .feed-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .feed-header h2 { font-size: 2rem; margin: 0; color: var(--text-dark); font-weight: 600; }
+
+        .task-container {
+            flex: 1;
+            overflow-y: auto; /* גלילה פנימית בלבד */
+            padding-left: 20px;
+        }
+
+        /* Task Card Design */
+        .task-card {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 24px;
+            border-radius: 28px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .task-card:hover {
+            transform: scale(1.02) translateX(-5px);
+            background: white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+        }
+
+        .task-info { display: flex; align-items: center; gap: 20px; }
+
+        /* אינדיקטור עדיפות עגול ורך */
+        .prio-indicator {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .prio-LOW { background: var(--prio-low); box-shadow: 0 0 10px var(--prio-low); }
+        .prio-MEDIUM { background: var(--prio-med); box-shadow: 0 0 10px var(--prio-med); }
+        .prio-HIGH { background: var(--prio-high); box-shadow: 0 0 10px var(--prio-high); }
+        .prio-CRITICAL { background: var(--prio-crit); box-shadow: 0 0 10px var(--prio-crit); }
+
+        .task-details h3 { margin: 0; font-size: 1.15rem; color: var(--text-dark); transition: 0.3s; }
+        .task-details p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-muted); font-weight: 300; }
+
+        /* Status: Completed */
+        .task-card.is-done { opacity: 0.5; background: rgba(255,255,255,0.4); }
+        .task-card.is-done h3 { text-decoration: line-through; color: var(--text-muted); }
+
+        .actions { display: flex; gap: 12px; }
+
+        .action-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%; /* כפתורים עגולים */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.8);
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: 0.3s;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .action-btn:hover { background: white; color: var(--primary-pastel); transform: scale(1.1); }
+        .action-btn.check:hover { color: #81c784; background: #e8f5e9; }
+        .action-btn.delete:hover { color: #ff9aa2; background: #fff5f5; }
+
+        /* Scrollbar דקיק */
+        .task-container::-webkit-scrollbar { width: 5px; }
+        .task-container::-webkit-scrollbar-track { background: transparent; }
+        .task-container::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.05); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-feather"></i>
+            <span>Taskly Cozy</span>
+        </div>
+
+        <div class="form-title">משימה חדשה</div>
+        <form action="/add_task" method="POST">
+            <input type="text" name="title" placeholder="מה על הפרק?" required>
+            <textarea name="description" placeholder="פרטים נוספים למחשבה..." rows="3"></textarea>
+            
+            <div class="form-title" style="margin-top: 20px;">עדיפות</div>
+            <select name="priority">
+                <option value="LOW">רגועה מאוד 🍃</option>
+                <option value="MEDIUM" selected>סטנדרטית ☁️</option>
+                <option value="HIGH">חשובה ✨</option>
+                <option value="CRITICAL">קריטית 🔥</option>
+            </select>
+
+            <button type="submit" class="btn-primary">להוסיף לענן</button>
+        </form>
+    </div>
+
+    <div class="feed">
+        <div class="feed-header">
+            <h2>היום שלך</h2>
+            <div id="task-count" style="color: var(--text-muted); font-size: 0.9rem; font-weight: 300;">טוען...</div>
+        </div>
+
+        <div class="task-container" id="taskList">
+            </div>
+    </div>
+</div>
+
+<script>
+    async function load() {
+        try {
+            const r = await fetch('/tasks');
+            const data = await r.json();
+            const list = document.getElementById('taskList');
+            document.getElementById('task-count').innerText = `${data.length} משימות ממתינות`;
+            
+            list.innerHTML = data.map(t => {
+                const done = t.status === 'completed';
+                return `
+                <div class="task-card ${done ? 'is-done' : ''}">
+                    <div class="task-info">
+                        <div class="prio-indicator prio-${t.priority}"></div>
+                        <div class="task-details">
+                            <h3>${t.title}</h3>
+                            <p>${t.description || 'ללא תיאור נוסף'}</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="/update_status/${t.task_id}/${done ? 'pending' : 'completed'}" class="action-btn check" title="${done ? 'ביטול סימון' : 'סיום'}">
+                            <i class="fas ${done ? 'fa-undo' : 'fa-check'}"></i>
+                        </a>
+                        <a href="/delete_task/${t.task_id}" class="action-btn delete" title="מחיקה">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+            `}).join('');
+        } catch(e) {}
+    }
+    load();
+    setInterval(load, 3000);
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly Pro | Cozy Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.5);
+            --text: #2d3436;
+            --muted: #636e72;
+            --accent: #dcd6f7;
+            --prio-low: #e2f0cb;
+            --prio-med: #b5ead7;
+            --prio-high: #ffdac1;
+            --prio-crit: #ff9aa2;
+        }
+
+        body {
+            /* תמונה נוצתית עדינה ומרחפת */
+background-image: url('https://i.pinimg.com/736x/c8/f6/00/c8f6008857d9ceeb183e545c3a66b436.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Plus Jakarta Sans', 'Assistant', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dashboard {
+            width: 90%;
+            max-width: 1100px;
+            height: 82vh;
+            background: var(--glass);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-radius: 40px;
+            display: flex;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            overflow: hidden;
+        }
+
+        /* חלוקת מסך נקייה */
+        .side-panel {
+            width: 340px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-panel {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 700; color: var(--text); margin-bottom: 35px; }
+        .logo i { color: #a6b1e1; margin-left: 10px; }
+
+        input, textarea, select {
+            width: 100%; padding: 16px; margin-bottom: 15px; border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.7);
+            font-family: inherit; outline: none; box-sizing: border-box; transition: 0.3s;
+        }
+
+        input:focus { background: white; border-color: var(--accent); }
+
+        .btn-add {
+            background: linear-gradient(135deg, #a6b1e1, #dcd6f7);
+            color: white; border: none; padding: 18px; border-radius: 20px;
+            font-weight: 600; cursor: pointer; transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(166, 177, 225, 0.2);
+        }
+
+        .btn-add:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(166, 177, 225, 0.3); }
+
+        /* רשימת משימות */
+        .task-list { flex: 1; overflow-y: auto; padding-left: 15px; }
+
+        .task-card {
+            background: rgba(255, 255, 255, 0.65);
+            padding: 24px; border-radius: 30px; margin-bottom: 18px;
+            display: flex; justify-content: space-between; align-items: center;
+            border: 1px solid rgba(255,255,255,0.3); transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .task-card:hover { transform: scale(1.02) translateX(-5px); background: white; }
+
+        .prio-mark { width: 10px; height: 10px; border-radius: 50%; }
+        .prio-LOW { background: var(--prio-low); }
+        .prio-MEDIUM { background: var(--prio-med); }
+        .prio-HIGH { background: var(--prio-high); }
+        .prio-CRITICAL { background: var(--prio-crit); }
+
+        .task-content h3 { margin: 0; font-size: 1.1rem; color: var(--text); }
+        .task-content p { margin: 5px 0 0; font-size: 0.85rem; color: var(--muted); }
+
+        .is-done { opacity: 0.4; filter: grayscale(0.5); }
+        .is-done h3 { text-decoration: line-through; }
+
+        .btn-action {
+            width: 40px; height: 40px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: white; color: var(--muted); text-decoration: none; transition: 0.3s;
+        }
+        .btn-action:hover { color: #a6b1e1; transform: rotate(15deg); }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <div class="side-panel">
+        <div class="logo"><i class="fas fa-feather-pointed"></i><span>Taskly</span></div>
+        <form action="/add_task" method="POST">
+            <input type="text" name="title" placeholder="כותרת המשימה..." required>
+            <textarea name="description" placeholder="תיאור קטן..." rows="2"></textarea>
+            <select name="priority">
+                <option value="LOW">עדיפות רכה 🍃</option>
+                <option value="MEDIUM" selected>עדיפות רגילה ☁️</option>
+                <option value="HIGH">עדיפות גבוהה ✨</option>
+                <option value="CRITICAL">קריטית 🔥</option>
+            </select>
+            <button type="submit" class="btn-add">להוסיף לענן</button>
+        </form>
+    </div>
+
+    <div class="main-panel">
+        <div class="task-list" id="taskList"></div>
+    </div>
+</div>
+
+<script>
+    async function load() {
+        try {
+            const r = await fetch('/tasks');
+            const data = await r.json();
+            const list = document.getElementById('taskList');
+            list.innerHTML = data.map(t => {
+                const done = t.status === 'completed';
+                return `
+                <div class="task-card ${done ? 'is-done' : ''}">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div class="prio-mark prio-${t.priority}"></div>
+                        <div class="task-content">
+                            <h3>${t.title}</h3>
+                            <p>${t.description || ''}</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="/update_status/${t.task_id}/${done ? 'pending' : 'completed'}" class="btn-action">
+                            <i class="fas ${done ? 'fa-undo' : 'fa-check'}"></i>
+                        </a>
+                        <a href="/delete_task/${t.task_id}" class="btn-action"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            `}).join('');
+        } catch(e) {}
+    }
+    load(); setInterval(load, 3000);
+</script>
+
+</body>
+</html>

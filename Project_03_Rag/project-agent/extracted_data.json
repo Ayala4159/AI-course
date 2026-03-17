@@ -1,0 +1,3249 @@
+{
+    "schema_version": "1.0",
+    "generated_at": "2026-03-17T11:40:35.368151",
+    "sources": [],
+    "items": {
+        "decisions": [
+            {
+                "id": "dec-1-0",
+                "title": "Code Generation",
+                "summary": "Created 1,000+ lines of production code",
+                "tags": [],
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-26-0",
+                "title": "Task State Machine",
+                "summary": "Implement explicit state machine with valid transitions",
+                "tags": [
+                    "state machine",
+                    "task management"
+                ],
+                "source": {
+                    "tool": "Python",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-9-0",
+                "title": "Separation of Concerns",
+                "summary": "Well-organized code structure",
+                "tags": [
+                    "Separation of Concerns",
+                    "Modularity"
+                ],
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-10-0",
+                "title": "Testing Foundation",
+                "summary": "Good baseline with 13 unit tests for core functionality",
+                "tags": [
+                    "AAA pattern",
+                    "Separate test directory"
+                ],
+                "source": {
+                    "tool": "markdown",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-13-0",
+                "title": "Add state validation method",
+                "summary": "Invalid state machine transitions possible",
+                "tags": [
+                    "state machine",
+                    "validation"
+                ],
+                "source": {
+                    "tool": "markdown",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-15-0",
+                "title": "Performance Concerns at Scale",
+                "summary": "O(n) list comprehensions used in filtering",
+                "tags": [
+                    "performance",
+                    "optimization"
+                ],
+                "source": {
+                    "tool": "code_review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-20-0",
+                "title": "Proposed Enhancement",
+                "summary": "Added validation for title and due date",
+                "tags": [],
+                "source": {
+                    "tool": "Python",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-26-0",
+                "title": "Naming Convention Consistency",
+                "summary": "Classes, methods, and constants follow consistent naming conventions",
+                "tags": [
+                    "naming convention",
+                    "pascal case",
+                    "snake case",
+                    "upper case"
+                ],
+                "source": {
+                    "tool": "code analysis tool",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-40-0",
+                "title": "Enum Pattern",
+                "summary": "Effectively isolates priority/status values",
+                "tags": [
+                    "Enum",
+                    "Pattern"
+                ],
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-49-0",
+                "title": "Language Choice",
+                "summary": "Python 3.9+ chosen as the language",
+                "tags": [
+                    "python",
+                    "language"
+                ],
+                "source": {
+                    "tool": "manual",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-35-0",
+                "title": "Project Scaffolding",
+                "summary": "Project scaffolding complete",
+                "tags": [],
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-36-0",
+                "title": "Code Generation",
+                "summary": "Generated 850+ lines of production code",
+                "tags": [],
+                "source": {
+                    "tool": "unknown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-39-0",
+                "title": "Enhancement Planning",
+                "summary": "Identified 10+ improvement opportunities",
+                "tags": [],
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-40-0",
+                "title": "6. CLI Development",
+                "summary": "Built interactive command-line interface",
+                "tags": [
+                    "CLI",
+                    "interactive"
+                ],
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-41-0",
+                "title": "Test Suite Creation",
+                "summary": "Generated 13 unit tests, Implemented AAA pattern, Covered core functionality, Identified coverage gaps",
+                "tags": [],
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-46-0",
+                "title": "Persistence",
+                "summary": "Save data to JSON format",
+                "tags": [],
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-64-0",
+                "title": "Phase 1: Quality & Validation",
+                "summary": "Add input validation",
+                "tags": [
+                    "validation",
+                    "testing"
+                ],
+                "source": {
+                    "tool": "mypy",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-69-0",
+                "title": "Code Excellence",
+                "summary": "Code excellence achieved",
+                "tags": [],
+                "source": {
+                    "tool": "code_review_tool",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-97-0",
+                "title": "TaskManager Module",
+                "summary": "High-level orchestration and management of tasks",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "src/task_manager.py",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-99-0",
+                "title": "Enum Pattern",
+                "summary": "Used for TaskPriority and TaskStatus to provide type-safe constants and eliminate magic strings.",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-26-0",
+                "title": "Constants",
+                "summary": "Constants defined in UPPER_SNAKE_CASE",
+                "tags": [
+                    "constants",
+                    "snakes_case"
+                ],
+                "source": {
+                    "tool": "cursor",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-36-0",
+                "title": "No database backend",
+                "summary": "No database backend",
+                "tags": [
+                    "database",
+                    "backend"
+                ],
+                "source": {
+                    "tool": "cursor",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-38-0",
+                "title": "Short-term",
+                "summary": "Implement validation from ENHANCEMENTS.md",
+                "tags": [],
+                "source": {
+                    "tool": "cursor",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-43-0",
+                "title": "Data Management Logic",
+                "summary": "Flat-File management style",
+                "tags": [
+                    "TaskManager",
+                    "Python dictionary-to-JSON"
+                ],
+                "source": {
+                    "tool": "cursor",
+                    "file": "GEMINI_SYSTEM_ARCHITECTURE.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "dec-44-0",
+                "title": "Architectural Choice",
+                "summary": "Chose Polling approach over WebSockets for MVP",
+                "tags": [
+                    "MVP",
+                    "Polling",
+                    "WebSockets"
+                ],
+                "source": {
+                    "tool": "cursor",
+                    "file": "GEMINI_SYSTEM_ARCHITECTURE.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            }
+        ],
+        "rules": [
+            {
+                "id": "rule-1-0",
+                "rule": "Separation of Concerns",
+                "scope": "Task and TaskManager",
+                "notes": null,
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-26-0",
+                "rule": "PENDING → IN_PROGRESS → COMPLETED",
+                "scope": "task state machine",
+                "notes": null,
+                "source": {
+                    "tool": "Python",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-28-0",
+                "rule": "Use async I/O for file-heavy operations",
+                "scope": "Project_03_Rag",
+                "notes": null,
+                "source": {
+                    "tool": "aiofiles",
+                    "file": "C:\\Users\\אילה אלבוגן\\Desktop\\אילה\\מקצועות מסלול\\דוברות AI\\AI brook\\Project_03_Rag\\project-agent\\data\\AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-14-0",
+                "rule": "minimal-validation",
+                "scope": "input-validation",
+                "notes": null,
+                "source": {
+                    "tool": "manual-code-review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-32-0",
+                "rule": "Invalid task ID handling",
+                "scope": "Medium Priority",
+                "notes": null,
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-13-0",
+                "rule": "✅",
+                "scope": "src/task.py",
+                "notes": null,
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-14-0",
+                "rule": "Use strict coding rules",
+                "scope": "code",
+                "notes": null,
+                "source": {
+                    "tool": "manual",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-45-0",
+                "rule": "Filtering and querying rules",
+                "scope": "COMPLETION_REPORT.md",
+                "notes": null,
+                "source": {
+                    "tool": "cursor",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-52-0",
+                "rule": "Package init",
+                "scope": "src/__init__.py",
+                "notes": null,
+                "source": {
+                    "tool": "cursor",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": "1. src/__init__.py - Package init",
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-96-0",
+                "rule": "Defines priority levels",
+                "scope": "src/task.py",
+                "notes": null,
+                "source": {
+                    "tool": "cursor",
+                    "file": "src/task.py",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-21-0",
+                "rule": "Use consistent naming conventions",
+                "scope": "Code",
+                "notes": null,
+                "source": {
+                    "tool": "Code Analyzer",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-23-0",
+                "rule": "Use camelCase for variable names",
+                "scope": "global",
+                "notes": null,
+                "source": {
+                    "tool": "manual",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-35-0",
+                "rule": "mypy src/",
+                "scope": "code quality",
+                "notes": null,
+                "source": {
+                    "tool": "bash",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-36-0",
+                "rule": "Single-user",
+                "scope": "concurrent access",
+                "notes": null,
+                "source": {
+                    "tool": "cursor",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-37-0",
+                "rule": "O(n) where n is number of tasks",
+                "scope": "performance",
+                "notes": null,
+                "source": {
+                    "tool": "markdown",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-66-0",
+                "rule": "May cause existing code to fail - handle gracefully",
+                "scope": "Validation",
+                "notes": null,
+                "source": {
+                    "tool": "None",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-83-0",
+                "rule": "Use strict return types",
+                "scope": "python",
+                "notes": null,
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-84-0",
+                "rule": "Use strict return types",
+                "scope": "python",
+                "notes": null,
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "rule-2-0",
+                "rule": "Code style guidelines should be defined",
+                "scope": "Development",
+                "notes": "Code style guidelines are defined in DEVELOPMENT.md",
+                "source": {
+                    "tool": "Manual review",
+                    "file": "FILE_MAP.md",
+                    "anchor": "DEVELOPMENT.md",
+                    "line_range": [
+                        220,
+                        220
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            }
+        ],
+        "warnings": [
+            {
+                "id": "warn-0-0",
+                "area": "code",
+                "message": "Technical debt: missing documentation in code",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "C:\\Users\\אילה אלבוגן\\Desktop\\אילה\\מקצועות מסלול\\דוברות AI\\AI brook\\Project_03_Rag\\project-agent\\data\\AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-2-0",
+                "area": "Architecture",
+                "message": "No architectural choices made in the code",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Documentation Generation",
+                    "file": "C:\\Users\\אילה אלבוגן\\Desktop\\אילה\\מקצועות מסלול\\דוברות AI\\AI brook\\Project_03_Rag\\project-agent\\data\\AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-3-0",
+                "area": "code_quality",
+                "message": "Missing documentation for API reference",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-5-0",
+                "area": "code_quality",
+                "message": "Missing documentation for technical debt",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-7-0",
+                "area": "code",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "Documentation Generation",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-10-0",
+                "area": "Code Style",
+                "message": "PEP 8 compliant code style",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-12-0",
+                "area": "code-quality",
+                "message": "Potential technical debt: missing documentation for code structure and architectural choices",
+                "severity": "info",
+                "source": {
+                    "tool": "Documentation Generation",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-13-0",
+                "area": "code-quality",
+                "message": "Potential technical debt due to lack of documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-15-0",
+                "area": "code_quality",
+                "message": "Missing documentation for sprint planning workflow",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "C:\\Users\\אילה אלבוגן\\Desktop\\אילה\\מקצועות מסלול\\דוברות AI\\AI brook\\Project_03_Rag\\project-agent\\data\\AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-17-0",
+                "area": "observed_at",
+                "message": "observed_at must be a valid ISO date",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown",
+                    "file": "C:\\Users\\אילה אלבוגן\\Desktop\\אילה\\מקצועות מסלול\\דוברות AI\\AI brook\\Project_03_Rag\\project-agent\\data\\AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-11"
+            },
+            {
+                "id": "warn-19-0",
+                "area": "test_coverage",
+                "message": "Missing tests for code paths",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        5,
+                        7
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-21-0",
+                "area": "Architecture Review",
+                "message": "Validate design pattern implementation",
+                "severity": "None",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        5,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-22-0",
+                "area": "Code",
+                "message": "Refactoring needed",
+                "severity": "Info",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-11"
+            },
+            {
+                "id": "warn-24-0",
+                "area": "Error Handling",
+                "message": "Methods return None/False for errors",
+                "severity": "Proposed",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        6,
+                        11
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-30-0",
+                "area": "",
+                "message": "Additional test needed",
+                "severity": "",
+                "source": {
+                    "tool": "",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": "",
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-31-0",
+                "area": "",
+                "message": "",
+                "severity": "",
+                "source": {
+                    "tool": "",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-31-1",
+                "area": "",
+                "message": "",
+                "severity": "",
+                "source": {
+                    "tool": "",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-31-2",
+                "area": "",
+                "message": "",
+                "severity": "",
+                "source": {
+                    "tool": "",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-33-0",
+                "area": "Documentation",
+                "message": "Update API docs when methods change",
+                "severity": "Info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-34-0",
+                "area": "Documentation",
+                "message": "Add diagram generation (Mermaid or PlantUML), Create video tutorials, Build interactive API explorer, Setup automated docstring validation",
+                "severity": "Warning",
+                "source": {
+                    "tool": "Unknown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-38-0",
+                "area": "",
+                "message": "List of potential features",
+                "severity": "",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-39-0",
+                "area": "code_quality",
+                "message": "Strict coding rules visible: - Use of Markdown format for documentation",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-0-0",
+                "area": "code_quality",
+                "message": "Strict type hints throughout codebase",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown_parser",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-1-0",
+                "area": "Code Analysis",
+                "message": "Analyze codebase for optimization opportunities",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Code Analysis Tool",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-2-0",
+                "area": "code_quality",
+                "message": "Potential technical debt in documentation and code structure",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "AGENTIC_ACTIVITIES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-3-0",
+                "area": "code_quality",
+                "message": "Missing documentation for project structure",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-4-0",
+                "area": "code_quality",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "code_analysis_tool",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-7-0",
+                "area": "coding",
+                "message": "Strict coding rules: type hints, mypy type checking",
+                "severity": "info",
+                "source": {
+                    "tool": "manual",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-8-0",
+                "area": "code-quality",
+                "message": "Potential technical debt due to missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-14-0",
+                "area": "input-validation",
+                "message": "No empty string checks",
+                "severity": "low",
+                "source": {
+                    "tool": "manual-code-review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-14-1",
+                "area": "input-validation",
+                "message": "No date format validation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual-code-review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-14-2",
+                "area": "input-validation",
+                "message": "No tag format validation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual-code-review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-14-3",
+                "area": "input-validation",
+                "message": "No duplicate task title checking",
+                "severity": "low",
+                "source": {
+                    "tool": "manual-code-review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-18-0",
+                "area": "Code Structure",
+                "message": "Code structure is well-organized with clear class hierarchy.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Analysis",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-27-0",
+                "area": "import organization",
+                "message": "Standard library before relative imports",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-28-0",
+                "area": "TaskManager.load_from_file()",
+                "message": "Missing documentation for load_from_file method",
+                "severity": "Medium",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-29-0",
+                "area": "Test Coverage",
+                "message": "Low test coverage detected",
+                "severity": "Warning",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-30-0",
+                "area": "code_quality",
+                "message": "Missing documentation for technical debt",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-33-0",
+                "area": "Testing",
+                "message": "Test retrieving non-existent task returns None",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Python",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": "test_get_nonexistent_task",
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-37-0",
+                "area": "database",
+                "message": "Potential optimization opportunities identified",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown-parser",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-39-0",
+                "area": "Design Pattern",
+                "message": "Implementation of Singleton pattern",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        6,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-43-0",
+                "area": "Extensibility Assessment",
+                "message": "requires Task refactoring",
+                "severity": "⚠️",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        6,
+                        7
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-44-0",
+                "area": "Architectural Evolution",
+                "message": "Suggested architectural evolution phases",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Analysis",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-47-0",
+                "area": "Security",
+                "message": "Add input validation",
+                "severity": "High",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        7,
+                        8
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-48-0",
+                "area": "Technology Stack",
+                "message": "Recommendation for using Python as the primary language",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-0-0",
+                "area": "code_quality",
+                "message": "missing documentation",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-5-0",
+                "area": "deployment",
+                "message": "Deployment pipeline is not set up",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-8-0",
+                "area": "Code Quality",
+                "message": "Add input validation",
+                "severity": "High",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-9-0",
+                "area": "Code Quality",
+                "message": "Recommendations for validation improvements",
+                "severity": "Info",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "CODE_ANALYSIS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-10-0",
+                "area": "code_quality",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown_parser",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-12-0",
+                "area": "header",
+                "message": "Header is not in title case",
+                "severity": "warning",
+                "source": {
+                    "tool": "pandoc",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-15-0",
+                "area": "coding",
+                "message": "Strict coding rules: - Use actual filename provided in context.",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown_parser",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-19-0",
+                "area": "code",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-20-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for technical debt and risks",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-21-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for project metrics",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-24-0",
+                "area": "Architecture",
+                "message": "Interactive menu system implemented",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-26-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Tool usage audit trail is present",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-33-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for refactoring opportunities",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-37-0",
+                "area": "Documentation Generation",
+                "message": "Created 6 detailed documentation files",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-38-0",
+                "area": "Code Review",
+                "message": "Comprehensive code review performed",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Code Review Tool",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        4,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-42-0",
+                "area": "Activity Documentation",
+                "message": "Tracked all tool usage",
+                "severity": "✅",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-44-0",
+                "area": "code_quality",
+                "message": "Missing documentation for task management functionality",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-47-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for file COMPLETION_REPORT.md",
+                "severity": "warning",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-48-0",
+                "area": "User Interface",
+                "message": "Missing UI component",
+                "severity": "Warning",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-49-0",
+                "area": "Code Quality",
+                "message": "Scores for various aspects of code quality",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Code Review Tool",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-51-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for setup.py and requirements.txt",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-53-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for file path",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-54-0",
+                "area": "Documentation",
+                "message": "Missing documentation for file path",
+                "severity": "Warning",
+                "source": {
+                    "tool": "None",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-56-0",
+                "area": "code",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-57-0",
+                "area": "Code Style",
+                "message": "Code style guide is missing",
+                "severity": "Warning",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-58-0",
+                "area": "Code Quality",
+                "message": "Strict coding rules or patterns visible in the text",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-60-0",
+                "area": "code",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-67-0",
+                "area": "coding_standards",
+                "message": "Strict coding rules: - Use actual filename provided in context - 'observed_at' must be a valid ISO date",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-70-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Potential technical debt due to lack of code examples",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-71-0",
+                "area": "Code Quality",
+                "message": "Strict coding rules enforced",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-72-0",
+                "area": "Agentic Tool Excellence",
+                "message": "9+ tool applications documented",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-74-0",
+                "area": "Code Quality",
+                "message": "Potential technical debt in code organization",
+                "severity": "Medium",
+                "source": {
+                    "tool": "Code Review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-75-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "High risk of missing documentation",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-76-0",
+                "area": "Code Review",
+                "message": "Missing documentation for technical debt",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-77-0",
+                "area": "Multiple Documentation Paths",
+                "message": "Different entry points for beginners, developers, reviewers, and enhancers.",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdownlint",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-78-0",
+                "area": "Enhancement Proposals",
+                "message": "Code samples are missing for implementation",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown-parser",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-79-0",
+                "area": "Architecture",
+                "message": "Interactive user interface provided",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-80-0",
+                "area": "Verification",
+                "message": "Final verification completed successfully",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Verification",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-83-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "No technical debt, missing documentation, or risks found in the provided text.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-84-0",
+                "area": "Project Structure",
+                "message": "Project structure is clean and well-organized",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-86-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-87-0",
+                "area": "COMPLETION_REPORT.md",
+                "message": "Missing documentation for code analysis report",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-88-0",
+                "area": "Code Quality",
+                "message": "Codebase needs cleaning",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-89-0",
+                "area": "enhancement",
+                "message": "Implementation guides are missing",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown-parser",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-90-0",
+                "area": "Navigation",
+                "message": "File path provided: COMPLETION_REPORT.md",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-91-0",
+                "area": "code_architecture",
+                "message": "Code architecture could be improved with more comments and documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-92-0",
+                "area": "Project Completion",
+                "message": "Project completed successfully",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Markdown",
+                    "file": "COMPLETION_REPORT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-2-0",
+                "area": "code_structure",
+                "message": "Fluent Interface pattern used",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        4,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-3-0",
+                "area": "coding_standards",
+                "message": "Strict coding rules: - Use actual filename provided in context.",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown_parser",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-6-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-7-0",
+                "area": "coding",
+                "message": "Strict coding rules visible in the text: - Use of Markdown for documentation",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-8-0",
+                "area": "Design",
+                "message": "Missing header",
+                "severity": "Error",
+                "source": {
+                    "tool": "pymarkdown",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-9-0",
+                "area": "code_structure",
+                "message": "Use of empty constructor",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown_parser",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-10-0",
+                "area": "code_review",
+                "message": "Strict coding rules visible in the text: - Use of Markdown for documentation",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-11-0",
+                "area": "code_quality",
+                "message": "Strict coding rules: - Use actual filename provided in context - 'observed_at' must be a valid ISO date",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-18-0",
+                "area": "Design",
+                "message": "Tasks are serialized with all metadata including timestamps and tags for full persistence.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-19-0",
+                "area": "Future Enhancements",
+                "message": "Database integration is needed",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "DESIGN.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-22-0",
+                "area": "Development",
+                "message": "Python 3.9 or higher is required",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-27-0",
+                "area": "code_style",
+                "message": "All modules, classes, and public methods use docstrings",
+                "severity": "info",
+                "source": {
+                    "tool": "code_review",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-29-0",
+                "area": "code_quality",
+                "message": "missing documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-30-0",
+                "area": "code",
+                "message": "Missing documentation for classes and methods",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-31-0",
+                "area": "code_structure",
+                "message": "AAA pattern used for test structure",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        6
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-33-0",
+                "area": "code",
+                "message": "missing docstrings",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        6
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-34-0",
+                "area": "tests",
+                "message": "Missing coverage for tests",
+                "severity": "warning",
+                "source": {
+                    "tool": "python",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-36-0",
+                "area": "authentication",
+                "message": "No authentication",
+                "severity": "high",
+                "source": {
+                    "tool": "cursor",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-38-0",
+                "area": "Error Handling",
+                "message": "Consider adding exception hierarchy in future versions",
+                "severity": "Warning",
+                "source": {
+                    "tool": "cursor",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-40-0",
+                "area": "Contributing",
+                "message": "Follow code style guidelines",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "DEVELOPMENT.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-43-0",
+                "area": "Input Validation",
+                "message": "Input validation is crucial for robustness",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-46-0",
+                "area": "code_quality",
+                "message": "Strict coding rules visible in the text include validation of task title, description, date, and tag format.",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-47-0",
+                "area": "code_structure",
+                "message": "Strict coding rules visible in the text include validation of inputs, use of type hints, and adherence to PEP 8 conventions.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "code_review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-50-0",
+                "area": "code_structure",
+                "message": "Strict adherence to coding rules and patterns visible in the text.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "code_review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-53-0",
+                "area": "Performance",
+                "message": "O(n) per filter operation improved to O(k) where k = result count",
+                "severity": "INFO",
+                "source": {
+                    "tool": "code review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        2
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-57-0",
+                "area": "Batch Operations",
+                "message": "Improve performance by batching operations",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-58-0",
+                "area": "code_structure",
+                "message": "Strictly follow the class structure and method naming conventions.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "code_review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-59-0",
+                "area": "Performance",
+                "message": "Implement task caching to reduce redundant computations",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-60-0",
+                "area": "Code Review",
+                "message": "No technical debt or missing documentation found.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-64-0",
+                "area": "Performance",
+                "message": "Implement task indexing",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-65-0",
+                "area": "Phase 4: State Management",
+                "message": "Implement TaskStateMachine",
+                "severity": "TODO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-67-0",
+                "area": "Testing",
+                "message": "Invalid title",
+                "severity": "INFO",
+                "source": {
+                    "tool": "cursor",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-68-0",
+                "area": "Code Quality",
+                "message": "Improper state management",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "ENHANCEMENTS.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        2
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-72-0",
+                "area": "EXAMPLES.md",
+                "message": "Missing imports for logging and error handling",
+                "severity": "warning",
+                "source": {
+                    "tool": "code_review",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-74-0",
+                "area": "EXAMPLES.md",
+                "message": "Missing documentation for TaskManager class",
+                "severity": "low",
+                "source": {
+                    "tool": "code_review",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-75-0",
+                "area": "code",
+                "message": "Missing documentation for task management",
+                "severity": "INFO",
+                "source": {
+                    "tool": "code_review",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-76-0",
+                "area": "code",
+                "message": "print statement detected",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-77-0",
+                "area": "Code Style",
+                "message": "Missing docstring",
+                "severity": "Warning",
+                "source": {
+                    "tool": "pylint",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-78-0",
+                "area": "code_quality",
+                "message": "Code follows strict rules",
+                "severity": "info",
+                "source": {
+                    "tool": "code_review",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-79-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        6
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-80-0",
+                "area": "observed_at",
+                "message": "Invalid date format. Expected ISO date (2026-03-16).",
+                "severity": "error",
+                "source": {
+                    "tool": "cursor",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2024-03-16"
+            },
+            {
+                "id": "warn-81-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-82-0",
+                "area": "coding",
+                "message": "strict rules for coding",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-86-0",
+                "area": "",
+                "message": "",
+                "severity": "",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-87-0",
+                "area": "code",
+                "message": "Remove tag 'urgent'",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": "Remove Tags",
+                    "line_range": [
+                        3,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-88-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-90-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-91-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": "Load Tasks from File",
+                    "line_range": [
+                        3,
+                        6
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-93-0",
+                "area": "code",
+                "message": "Missing documentation for function calls",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-94-0",
+                "area": "coding",
+                "message": "strict_coding_rules",
+                "severity": "info",
+                "source": {
+                    "tool": "python",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-95-0",
+                "area": "code",
+                "message": "Missing documentation for function generate_task_report",
+                "severity": "warning",
+                "source": {
+                    "tool": "code_analysis",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-97-0",
+                "area": "Troubleshooting",
+                "message": "Check the logs for errors",
+                "severity": "INFO",
+                "source": {
+                    "tool": "cursor",
+                    "file": "EXAMPLES.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        1
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-98-0",
+                "area": "Task Retrieval",
+                "message": "Task ID does not exist",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Python",
+                    "file": "EXAMPLES.md",
+                    "anchor": "Task Not Found",
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-99-0",
+                "area": "Code",
+                "message": "Duplicate tags are not added",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Python",
+                    "file": "EXAMPLES.md",
+                    "anchor": "Duplicate Tags Not Added",
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-1-0",
+                "area": "File Directory and Usage Guide",
+                "message": "Total Files: 17",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-6-0",
+                "area": "FILE_PATH",
+                "message": "No architectural choices or coding rules found in the file.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-7-0",
+                "area": "FILE PATH",
+                "message": "FILE_MAP.md",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-8-0",
+                "area": "Analysis & Improvement",
+                "message": "List of files to analyze",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-12-0",
+                "area": "coding_standards",
+                "message": "Strict coding rules: - Use actual filename provided in context - 'observed_at' must be a valid ISO date",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-13-0",
+                "area": "file path",
+                "message": "file path provided",
+                "severity": "info",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-14-0",
+                "area": "coding_standards",
+                "message": "Strict coding rules: - Use actual filename provided in context - 'observed_at' must be a valid ISO date",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        3
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-15-0",
+                "area": "code_quality",
+                "message": "Strict coding rules or patterns visible in the text: - Use of Markdown for documentation",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-18-0",
+                "area": "coding_standards",
+                "message": "Strict coding rules: - Use actual filename provided in context.",
+                "severity": "info",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-22-0",
+                "area": "FILE_MAP",
+                "message": "Enhancement level not specified",
+                "severity": "INFO",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-25-0",
+                "area": "FILE_MAP.md",
+                "message": "Missing documentation for file path",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-26-0",
+                "area": "FILE_MAP.md",
+                "message": "Missing documentation for file path",
+                "severity": "low",
+                "source": {
+                    "tool": "manual",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-27-0",
+                "area": "code_review",
+                "message": "Code review process lacks documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-28-0",
+                "area": "FILE_MAP.md",
+                "message": "Missing documentation for FILE_MAP.md",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-29-0",
+                "area": "File Map",
+                "message": "Critical files listed with priority",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-30-0",
+                "area": "coding_standards",
+                "message": "Strictly return a SINGLE JSON object. No multiple tool calls.",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        2
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-33-0",
+                "area": "testing",
+                "message": "Integration tests are missing",
+                "severity": "warning",
+                "source": {
+                    "tool": "markdown",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-34-0",
+                "area": "FILE_MAP.md",
+                "message": "Missing documentation for project architecture",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        10
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-37-0",
+                "area": "Testing",
+                "message": "Run tests: pytest tests/",
+                "severity": "INFO",
+                "source": {
+                    "tool": "editor",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        2
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-40-0",
+                "area": "FILE_PATH",
+                "message": "No technical debt or missing documentation found",
+                "severity": "INFO",
+                "source": {
+                    "tool": "System Architect Analyst",
+                    "file": "FILE_MAP.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-45-0",
+                "area": "Code Quality",
+                "message": "Strict coding rules: - Use of Enum for TaskStatus",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "GEMINI_SYSTEM_ARCHITECTURE.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-46-0",
+                "area": "Project Summary",
+                "message": "Project completed",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Markdown",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-11"
+            },
+            {
+                "id": "warn-47-0",
+                "area": "code-quality",
+                "message": "Potential technical debt in project documentation",
+                "severity": "low",
+                "source": {
+                    "tool": "manual-review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-49-0",
+                "area": "code_structure",
+                "message": "Strict adherence to package structure",
+                "severity": "INFO",
+                "source": {
+                    "tool": "manual_analysis",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        1,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-50-0",
+                "area": "code",
+                "message": "missing docstrings for classes and methods",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-52-0",
+                "area": "code_quality",
+                "message": "missing documentation",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-53-0",
+                "area": "code",
+                "message": "missing docstrings in src/__init__.py",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-54-0",
+                "area": "code",
+                "message": "No technical debt or missing documentation found",
+                "severity": "info",
+                "source": {
+                    "tool": "manual",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-55-0",
+                "area": "code",
+                "message": "missing docstrings",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        4
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-56-0",
+                "area": "code",
+                "message": "missing docstrings in test functions",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-59-0",
+                "area": "code_quality",
+                "message": "Missing documentation for design patterns",
+                "severity": "high",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": [
+                        3,
+                        5
+                    ]
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-60-0",
+                "area": "code",
+                "message": "Missing documentation for performance considerations",
+                "severity": "warning",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-61-0",
+                "area": "code_snippets",
+                "message": "Lack of comments in code snippets",
+                "severity": "low",
+                "source": {
+                    "tool": "manual_review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            },
+            {
+                "id": "warn-62-0",
+                "area": "Documentation",
+                "message": "No technical debt or missing documentation found",
+                "severity": "INFO",
+                "source": {
+                    "tool": "Manual Review",
+                    "file": "PROJECT_SUMMARY.md",
+                    "anchor": null,
+                    "line_range": null
+                },
+                "observed_at": "2026-03-16"
+            }
+        ]
+    }
+}
